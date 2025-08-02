@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GESLA Model 3</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">GESLA</div>
+    
+    <button class="menu-toggle" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <nav class="nav-links">
+      <a href="#">Vehicles</a>
+      <a href="#">Energy</a>
+      <a href="#">Charging</a>
+      <a href="#">Discover</a>
+      <a href="#">Shop</a>
+    </nav>
+
+    <div class="icons">
+      <img src="assests/fe_question.png" alt="Help" />
+      <img src="assests/mynaui_globe.png" alt="Language" />
+      <img src="assests/Vector.png" alt="Account" />
+    </div>
+  </header>
+
+  <main class="main-section">
+    <h1>Model 3</h1>
+    <p class="price">From $299/mo for a Limited Time</p>
+    <div class="cta-buttons">
+      <button class="btn-primary">Order Now</button>
+      <button class="btn-secondary">View Inventory</button>
+    </div>
+
+    <div class="car-images">
+      <img src="assests/Picture card 1.png" alt="Model 3 car image" />
+      <img src="assests/Picture card 1.png" alt="Model 3 car image" />
+    </div>
+
+    <section class="safety-section">
+      <div class="safety-content">
+        <h2>Engineered for Safety</h2>
+        <p>
+          Model 3 benefits from the same features that make our other vehicles so safe:
+          energy-absorbing side sills, a fortified battery pack mounted low in the vehicle
+          to reduce rollover risk and a metal body structure that can withstand many times
+          the car's weight. Active safety features like automatic emergency braking come standard.
+        </p>
+        <button class="btn-outline">View Inventory</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Gesla 2025</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
